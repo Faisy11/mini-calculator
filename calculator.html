@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(./asset/2454628.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .sub{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            border: 2px solid black;
+            width: 400px;
+            margin-left: 50px;
+            justify-content: space-between;
+            border: none;
+        }
+        #fir,#sec{
+            height: 25px;
+            width: 100px;
+            border-radius: 5px;
+            border-top: none;
+            border-left: none;
+            border-color: rgb(0, 0, 0);
+            box-shadow: 0px 0px 10px black;
+            
+        }
+        .but{
+        border: 2px solid;
+        text-align: center;
+        padding-top: 30px;
+        border: none;
+        }
+        #total{
+            border: 2px solid;
+        text-align: center;
+        padding-top: 30px;
+        border: none;
+        }
+        .main{
+            border: 2px solid;
+            width: 500px;
+            margin-left: 450px;
+            height: 250px;
+            margin-top: 200px;
+            background-color: rgba(10, 125, 233, 0.192);
+border-color: rgba(10, 125, 233, 0.192);   
+border-radius: 20px;
+box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.493);
+     }
+        button{
+            width: 200px;
+            box-shadow: 0px 0px 10px rgb(33, 86, 185);
+            border-top: none;
+            border-left: none;
+            border-color: rgb(0, 0, 0);
+            box-shadow: 2px 2px 5px black;
+
+        }
+        select{
+            height: 25px;
+            width: 50px;
+            border-radius: 5px;
+            border-top: none;
+            border-left: none;
+            border-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.623);
+            color: white;
+            box-shadow: 0px 0px 5px white;
+        }
+            
+            p{
+           color: white;
+            }
+            h6{
+                color: rgba(255, 255, 255, 0.541);
+                font-size: 5px;
+                padding-top: 10px;
+                padding-left: 10px;
+                letter-spacing: 1px;
+            }
+    </style>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="main">
+    <h6>MINI CALCULATOR</h6>
+    <div class="sub">
+        <input id="fir" type="number" placeholder="0" required><br>
+        <select id="sym">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        
+        </select>
+        <input id="sec" type="number"  placeholder="0" required><br>
+        
+             </div>
+        
+         <div class="but">
+             <button class="btn-primary" onclick="mark()">=</button>
+         </div>
+         <p id="total"></p>
+</div>
+    <script src="calculator.js"></script>
+</body>
+</html>
